@@ -61,7 +61,7 @@ const OPINIONS = [
 
 function OpinionCard({ opinion }: { opinion: Opinion }) {
   return (
-    <Card className="shadow-lg">
+    <Card className="shadow-lg border border-primary">
       <CardHeader className="flex gap-4 items-center">
         <Avatar className="w-14 h-14">
           <AvatarImage src={opinion.avatar} alt={opinion.name} />

@@ -3,7 +3,7 @@ import Image from "next/image";
 export function About() {
   return (
     <div className="flex items-center justify-center w-screen" id="about">
-      <div className="flex flex-col gap-8   md:border rounded-lg bg-white w-screen md:w-6/12 p-4 shadow-lg">
+      <div className="flex flex-col gap-8   md:border rounded-lg bg-white w-screen md:w-6/12 p-4 shadow-lg border border-primary">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
           <Image
             src="https://res.cloudinary.com/lesteban/image/upload/v1748652782/kodempro/trato_rcpvs2.avif"

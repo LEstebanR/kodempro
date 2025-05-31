@@ -18,7 +18,7 @@ interface Service {
 function ServiceCard({ service }: { service: Service }) {
   return (
     <Card
-      className="shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+      className="shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-primary"
       id={`#${service.id}`}
     >
       <CardHeader>
