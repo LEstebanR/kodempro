@@ -45,7 +45,7 @@ export function Contact() {
           <div className="flex flex-col gap-2">
             {CONTACT_INFO.map((info) => (
               <div className="flex gap-2 items-center" key={info.title}>
-                <div className="bg-green-200 text-cyan-700 font-bold rounded-full p-1 flex items-center justify-center h-10  w-10">
+                <div className="bg-primary text-white font-bold rounded-full p-1 flex items-center justify-center h-10  w-10">
                   {info.icon}
                 </div>
                 <div className="flex flex-col gap-2">

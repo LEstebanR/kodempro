@@ -51,11 +51,8 @@ export function Header() {
             </Link>
           ))}
         </div>
-        <Button
-          className="bg-green-200 text-cyan-700 font-bold hidden md:inline-flex w-36"
-          asChild
-        >
-          <Link href="/contacto">
+        <Button className="font-bold hidden md:inline-flex w-36" asChild>
+          <Link href="https://wa.me/573012707999">
             <MessageCircleIcon className="w-4 h-4" />
             Contacto
           </Link>

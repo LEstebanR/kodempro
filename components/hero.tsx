@@ -22,7 +22,7 @@ export function Hero() {
             Ofrecemos soluciones estratégicas para promover el crecimiento
             sostenible y la competitividad en diferentes sectores.
           </p>
-          <Button className="bg-green-200 text-cyan-700 font-bold" asChild>
+          <Button asChild>
             <Link
               href="https://wa.me/573012707999"
               target="_blank"

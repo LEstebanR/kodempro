@@ -23,7 +23,7 @@ function ServiceCard({ service }: { service: Service }) {
     >
       <CardHeader>
         <div className="flex items-center justify-center gap-4">
-          <div className="rounded-full bg-cyan-700 p-2 text-white">
+          <div className="rounded-full bg-primary p-2 text-white">
             {service.icon}
           </div>
           <CardTitle>{service.title}</CardTitle>
