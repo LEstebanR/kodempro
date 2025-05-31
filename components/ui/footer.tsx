@@ -15,10 +15,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="flex flex-col gap-4">
             <Image
-              src="https://res.cloudinary.com/lesteban/image/upload/v1748660937/kodempro/WhatsApp_Image_2025-05-30_at_21.57.32_el48om.jpg"
+              src="https://res.cloudinary.com/lesteban/image/upload/c_crop,ar_16:9/v1748696685/kodempro/logoblanco.png"
               alt="Logo"
-              width={100}
-              height={100}
+              width={150}
+              height={150}
               className="rounded-sm"
             />
             <p className="text-slate-300">

@@ -43,10 +43,10 @@ export function Header() {
       <div className="container py-1 flex items-center justify-between mx-auto  px-4 md:px-0 md:w-6/12">
         <div className="flex items-center p-1 h-full w-36">
           <Image
-            src="https://res.cloudinary.com/lesteban/image/upload/v1748660937/kodempro/WhatsApp_Image_2025-05-30_at_21.57.32_el48om.jpg"
+            src="https://res.cloudinary.com/lesteban/image/upload/c_crop,ar_16:9/v1748696285/kodempro/logonegro.png"
             alt="Logo"
-            width={60}
-            height={60}
+            width={120}
+            height={120}
             className="rounded-sm"
             priority
           />
