@@ -40,14 +40,13 @@ const links = [
 export function Header() {
   return (
     <header className="w-full h-14 fixed top-0 left-0 right-0 z-50 bg-white">
-      <div className="container py-1 flex items-center justify-between mx-auto  px-4 md:px-0 md:w-6/12">
-        <div className="flex items-center p-1 h-full w-36">
+      <div className="container py- flex items-center justify-between mx-auto  px-4 md:px-0 md:w-6/12">
+        <div className="flex items-center p-1  w-36">
           <Image
             src="https://res.cloudinary.com/lesteban/image/upload/c_crop,ar_16:9/v1748696285/kodempro/logonegro.png"
             alt="Logo"
-            width={120}
-            height={120}
-            className="rounded-sm"
+            width={100}
+            height={40}
             priority
           />
         </div>

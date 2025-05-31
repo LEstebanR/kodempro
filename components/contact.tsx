@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "./ui/button";
+import { SERVICES } from "@/lib/data";
 
 const CONTACT_INFO = [
   {
@@ -67,22 +68,11 @@ export function Contact() {
               <SelectValue placeholder="Selecciona un servicio" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="servicio-1">
-                Consultoría especializada
-              </SelectItem>
-              <SelectItem value="servicio-2">
-                Cualificación de funcionarios públicos
-              </SelectItem>
-              <SelectItem value="servicio-3">Desarrollo de software</SelectItem>
-              <SelectItem value="servicio-4">
-                Creamos estrategias de recuperación de cartera
-              </SelectItem>
-              <SelectItem value="servicio-5">
-                Comercialización de software
-              </SelectItem>
-              <SelectItem value="servicio-6">
-                Fortalecimiento y desarrollo de proyectos
-              </SelectItem>
+              {SERVICES.map((service) => (
+                <SelectItem value={service.id} key={service.id}>
+                  {service.title}
+                </SelectItem>
+              ))}
             </SelectContent>
           </Select>
           <Label>Mensaje</Label>

@@ -1,6 +1,7 @@
 import { FacebookIcon, Heart, InstagramIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { SERVICES } from "@/lib/data";
 
 export function Footer() {
   return (
@@ -45,42 +46,15 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <p className="text-white text-2xl font-bold">Servicios</p>
             <div className="flex flex-col gap-1">
-              <Link
-                href="#services"
-                className="text-slate-300 hover:text-white transition-all duration-300 hover:underline underline-offset-4"
-              >
-                Consultoría especializada
-              </Link>
-              <Link
-                href="#services"
-                className="text-slate-300 hover:text-white transition-all duration-300 hover:underline underline-offset-4"
-              >
-                Cualificación de funcionarios públicos
-              </Link>
-              <Link
-                href="#services"
-                className="text-slate-300 hover:text-white transition-all duration-300 hover:underline underline-offset-4"
-              >
-                Desarrollo de software
-              </Link>
-              <Link
-                href="#services"
-                className="text-slate-300 hover:text-white transition-all duration-300 hover:underline underline-offset-4"
-              >
-                Creamos estrategias de recuperación de cartera
-              </Link>
-              <Link
-                href="#services"
-                className="text-slate-300 hover:text-white transition-all duration-300 hover:underline underline-offset-4"
-              >
-                Comercialización de software
-              </Link>
-              <Link
-                href="#services"
-                className="text-slate-300 hover:text-white transition-all duration-300 hover:underline underline-offset-4"
-              >
-                Fortalecimiento y desarrollo de proyectos
-              </Link>
+              {SERVICES.map((service) => (
+                <Link
+                  href={`#${service.id}`}
+                  className="text-slate-300 hover:text-white transition-all duration-300 hover:underline underline-offset-4"
+                  key={service.id}
+                >
+                  {service.title}
+                </Link>
+              ))}
             </div>
           </div>
 
