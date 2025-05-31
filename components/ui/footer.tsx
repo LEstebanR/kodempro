@@ -1,5 +1,6 @@
 import { Heart } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -7,7 +8,13 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-0 md:w-6/12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="flex flex-col gap-4">
-            <p className="text-white text-2xl font-bold">LOGO</p>
+            <Image
+              src="https://res.cloudinary.com/lesteban/image/upload/v1748660937/kodempro/WhatsApp_Image_2025-05-30_at_21.57.32_el48om.jpg"
+              alt="Logo"
+              width={100}
+              height={100}
+              className="rounded-sm"
+            />
             <p className="text-slate-300">
               Consultores en proyectos, desarrollo económico y emprendimiento.
             </p>
@@ -19,25 +26,37 @@ export function Footer() {
                 href="#services"
                 className="text-slate-300 hover:text-white transition-all duration-300 hover:underline underline-offset-4"
               >
-                Servicio 1
+                Consultoría especializada
               </Link>
               <Link
                 href="#services"
                 className="text-slate-300 hover:text-white transition-all duration-300 hover:underline underline-offset-4"
               >
-                Servicio 2
+                Cualificación de funcionarios públicos
               </Link>
               <Link
                 href="#services"
                 className="text-slate-300 hover:text-white transition-all duration-300 hover:underline underline-offset-4"
               >
-                Servicio 3
+                Desarrollo de software
               </Link>
               <Link
                 href="#services"
                 className="text-slate-300 hover:text-white transition-all duration-300 hover:underline underline-offset-4"
               >
-                Servicio 4
+                Creamos estrategias de recuperación de cartera
+              </Link>
+              <Link
+                href="#services"
+                className="text-slate-300 hover:text-white transition-all duration-300 hover:underline underline-offset-4"
+              >
+                Comercialización de software
+              </Link>
+              <Link
+                href="#services"
+                className="text-slate-300 hover:text-white transition-all duration-300 hover:underline underline-offset-4"
+              >
+                Fortalecimiento y desarrollo de proyectos
               </Link>
             </div>
           </div>

@@ -11,6 +11,7 @@ import {
 import { MenuIcon, MessageCircleIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 const links = [
   {
@@ -31,7 +32,14 @@ export function Header() {
   return (
     <header className="w-full h-14 fixed top-0 left-0 right-0 z-50 bg-white">
       <div className="container py-4 flex items-center justify-between mx-auto  px-4 md:px-0 md:w-6/12">
-        <p className="w-36">Logo</p>
+        <Image
+          src="https://res.cloudinary.com/lesteban/image/upload/v1748660937/kodempro/WhatsApp_Image_2025-05-30_at_21.57.32_el48om.jpg"
+          alt="Logo"
+          width={60}
+          height={60}
+          className="rounded-sm"
+          priority
+        />
         <div className="hidden md:flex gap-4">
           {links.map((link) => (
             <Link

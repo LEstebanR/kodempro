@@ -6,7 +6,7 @@ import Image from "next/image";
 export function Hero() {
   return (
     <div
-      className="flex flex-col items-center justify-center  w-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 mt-14"
+      className="flex flex-col items-center justify-center  w-screen  mt-14"
       id="hero"
     >
       <div className="py-14 grid grid-cols-1 md:grid-cols-2 gap-12 md:w-6/12 px-4 md:px-0 items-center">

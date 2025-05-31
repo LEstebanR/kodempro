@@ -80,10 +80,22 @@ export function Contact() {
               <SelectValue placeholder="Selecciona un servicio" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="servicio-1">Servicio 1</SelectItem>
-              <SelectItem value="servicio-2">Servicio 2</SelectItem>
-              <SelectItem value="servicio-3">Servicio 3</SelectItem>
-              <SelectItem value="servicio-4">Servicio 4</SelectItem>
+              <SelectItem value="servicio-1">
+                Consultoría especializada
+              </SelectItem>
+              <SelectItem value="servicio-2">
+                Cualificación de funcionarios públicos
+              </SelectItem>
+              <SelectItem value="servicio-3">Desarrollo de software</SelectItem>
+              <SelectItem value="servicio-4">
+                Creamos estrategias de recuperación de cartera
+              </SelectItem>
+              <SelectItem value="servicio-5">
+                Comercialización de software
+              </SelectItem>
+              <SelectItem value="servicio-6">
+                Fortalecimiento y desarrollo de proyectos
+              </SelectItem>
             </SelectContent>
           </Select>
           <Label>Mensaje</Label>
