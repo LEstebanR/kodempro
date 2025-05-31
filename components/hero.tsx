@@ -1,4 +1,4 @@
-import { Check, MessageCircleIcon } from "lucide-react";
+import { Check, FileIcon, MessageCircleIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
@@ -22,16 +22,25 @@ export function Hero() {
             Ofrecemos soluciones estratégicas para promover el crecimiento
             sostenible y la competitividad en diferentes sectores.
           </p>
-          <Button asChild>
-            <Link
-              href="https://wa.me/573012707999"
-              target="_blank"
-              className="flex items-center gap-2"
-            >
-              <MessageCircleIcon className="w-4 h-4" />
-              Contacto
-            </Link>
-          </Button>
+          <div className="flex gap-2">
+            <Button asChild className="w-1/2">
+              <Link
+                href="https://wa.me/573012707999"
+                target="_blank"
+                className="flex items-center gap-2"
+              >
+                <MessageCircleIcon className="w-4 h-4" />
+                Contacto
+              </Link>
+            </Button>
+            <Button asChild className="w-1/2" variant="outline">
+              <Link href="#contact" className="flex items-center gap-2">
+                <FileIcon className="w-4 h-4" />
+                Cotización
+              </Link>
+            </Button>
+          </div>
+
           <div className="flex gap-4 justify-between flex-wrap">
             <div className="flex gap-1 ">
               <div className="rounded-full bg-primary p-1 flex items-center justify-center">
