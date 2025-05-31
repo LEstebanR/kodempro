@@ -13,7 +13,7 @@ const KPIData = [
   },
   {
     title: "Clientes Felices",
-    value: "12",
+    value: "50",
     icon: <Users className="w-8 h-8 text-primary" />,
     description: "Clientes satisfechos con nuestros servicios",
   },
@@ -27,7 +27,8 @@ const KPIData = [
     title: "Procesos de Contratación",
     value: "90",
     icon: <FileCheck className="w-8 h-8 text-primary" />,
-    description: "Procesos realizados en SECOP II y TVEC",
+    description:
+      "Procesos realizados en SECOP I y II, MGA WEB, SGR, PIP, SISPT",
   },
 ];
 

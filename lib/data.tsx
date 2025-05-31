@@ -50,6 +50,13 @@ export const SERVICES = [
     icon: <ChartBarIcon />,
     id: "service-6",
   },
+  {
+    title: "Asistencia virtual",
+    description:
+      "Ofrecemos asistencia virtual para el fortalecimiento y desarrollo de proyectos en entidades públicas y privadas de cualquier país al costo justo y con la calidad y oportunidades requeridas. 18-30 $USD/h",
+    icon: <UserIcon />,
+    id: "service-7",
+  },
 ];
 
 export const CLIENTS_OPTIONS = [
