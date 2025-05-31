@@ -1,4 +1,10 @@
-import { Heart } from "lucide-react";
+import {
+  FacebookIcon,
+  Heart,
+  InstagramIcon,
+  Linkedin,
+  XIcon,
+} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -18,6 +24,12 @@ export function Footer() {
             <p className="text-slate-300">
               Consultores en proyectos, desarrollo económico y emprendimiento.
             </p>
+            <div className="flex gap-2 text-white">
+              <Linkedin />
+              <XIcon />
+              <InstagramIcon />
+              <FacebookIcon />
+            </div>
           </div>
           <div className="flex flex-col gap-4">
             <p className="text-white text-2xl font-bold">Servicios</p>

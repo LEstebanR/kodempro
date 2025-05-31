@@ -1,11 +1,4 @@
-import {
-  FacebookIcon,
-  InstagramIcon,
-  Linkedin,
-  MailIcon,
-  PhoneIcon,
-  XIcon,
-} from "lucide-react";
+import { MailIcon, PhoneIcon } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -54,12 +47,6 @@ export function Contact() {
                 </div>
               </div>
             ))}
-          </div>
-          <div className="flex gap-2">
-            <Linkedin />
-            <XIcon />
-            <InstagramIcon />
-            <FacebookIcon />
           </div>
         </div>
         <Card className="p-8 shadow-lg flex flex-col gap-4 border border-primary">
