@@ -8,7 +8,13 @@ import {
   MenubarSeparator,
   MenubarTrigger,
 } from "@/components/ui/menubar";
-import { MenuIcon, MessageCircleIcon } from "lucide-react";
+import {
+  HomeIcon,
+  MenuIcon,
+  MessageCircleIcon,
+  PresentationIcon,
+  UserIcon,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
@@ -17,14 +23,17 @@ const links = [
   {
     label: "Inicio",
     href: "#hero",
+    icon: <HomeIcon />,
   },
   {
     label: "Servicios",
     href: "#services",
+    icon: <PresentationIcon />,
   },
   {
     label: "Nosotros",
     href: "#about",
+    icon: <UserIcon />,
   },
 ];
 
@@ -69,7 +78,10 @@ export function Header() {
               <MenubarContent>
                 {links.map((link) => (
                   <MenubarItem key={link.label} asChild>
-                    <Link href={link.href}>{link.label}</Link>
+                    <Link href={link.href}>
+                      {link.icon}
+                      {link.label}
+                    </Link>
                   </MenubarItem>
                 ))}
                 <MenubarSeparator />
