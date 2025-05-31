@@ -88,7 +88,7 @@ export function Services() {
       id="services"
     >
       <div className="flex flex-col gap-8 py-14  px-4 md:px-0 md:w-6/12">
-        <h2 className="text-5xl">Nuestros servicios</h2>
+        <h2 className="text-5xl text-center">Nuestros servicios</h2>
         <p className="text-xl">
           Optimizamos procesos, mejoramos la eficiencia y aumentamos la
           rentabilidad de tu negocio.
