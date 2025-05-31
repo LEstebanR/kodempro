@@ -46,6 +46,17 @@ const OPINIONS = [
     avatar:
       "https://res.cloudinary.com/lesteban/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1748655846/kodempro/avatar_echm3i.avif",
   },
+  {
+    name: "Jhonn Adams",
+    company: "ACME",
+    fallback: "AC",
+    description:
+      "La consultoría IT de Kodempro nos ayudó a optimizar nuestros procesos y reducir costos. Recomendamos sus servicios sin dudarlo.",
+    position: "CEO",
+    icon: <StarIcon />,
+    avatar:
+      "https://res.cloudinary.com/lesteban/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1748655846/kodempro/avatar_echm3i.avif",
+  },
 ];
 
 function OpinionCard({ opinion }: { opinion: Opinion }) {
@@ -83,7 +94,7 @@ export function Clients() {
         <p className="text-xl">
           Hemos ayudado a muchas empresas a crecer y a mejorar su rentabilidad.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {OPINIONS.map((opinion) => (
             <OpinionCard key={opinion.name} opinion={opinion} />
           ))}
