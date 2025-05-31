@@ -31,7 +31,7 @@ export function Header() {
   return (
     <header className="w-full h-14 fixed top-0 left-0 right-0 z-50 bg-white">
       <div className="container py-4 flex items-center justify-between mx-auto  px-4 md:px-0 md:w-6/12">
-        <p>Logo</p>
+        <p className="w-36">Logo</p>
         <div className="hidden md:flex gap-4">
           {links.map((link) => (
             <Link
@@ -44,7 +44,7 @@ export function Header() {
           ))}
         </div>
         <Button
-          className="bg-green-200 text-cyan-700 font-bold hidden md:inline-flex"
+          className="bg-green-200 text-cyan-700 font-bold hidden md:inline-flex w-36"
           asChild
         >
           <Link href="/contacto">
