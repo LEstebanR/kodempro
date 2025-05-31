@@ -17,7 +17,6 @@ export function About() {
             <p className="">
               Somos una empresa que se dedica a ofrecer servicios de consultoría
               y desarrollo económico. <br />
-              <br />
               Nos comprometemos a brindar soluciones personalizadas y eficientes
               para impulsar el crecimiento de tu negocio.
             </p>
