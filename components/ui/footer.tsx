@@ -33,6 +33,12 @@ export function Footer() {
               >
                 Servicio 3
               </Link>
+              <Link
+                href="#services"
+                className="text-slate-300 hover:text-white transition-all duration-300 hover:underline underline-offset-4"
+              >
+                Servicio 4
+              </Link>
             </div>
           </div>
 

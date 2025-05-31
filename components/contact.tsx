@@ -83,6 +83,7 @@ export function Contact() {
               <SelectItem value="servicio-1">Servicio 1</SelectItem>
               <SelectItem value="servicio-2">Servicio 2</SelectItem>
               <SelectItem value="servicio-3">Servicio 3</SelectItem>
+              <SelectItem value="servicio-4">Servicio 4</SelectItem>
             </SelectContent>
           </Select>
           <Label>Mensaje</Label>

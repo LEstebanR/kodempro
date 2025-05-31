@@ -48,6 +48,12 @@ const SERVICES = [
     icon: <ChartBarIcon />,
     id: "service-3",
   },
+  {
+    title: "Servicio 4",
+    description: "Descripción del servicio 4",
+    icon: <ChartBarIcon />,
+    id: "service-4",
+  },
 ];
 
 export function Services() {
@@ -62,7 +68,7 @@ export function Services() {
           Optimizamos procesos, mejoramos la eficiencia y aumentamos la
           rentabilidad de tu negocio.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {SERVICES.map((service) => (
             <ServiceCard key={service.title} service={service} />
           ))}
