@@ -1,10 +1,4 @@
-import {
-  FacebookIcon,
-  Heart,
-  InstagramIcon,
-  Linkedin,
-  XIcon,
-} from "lucide-react";
+import { FacebookIcon, Heart, InstagramIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -24,11 +18,28 @@ export function Footer() {
             <p className="text-slate-300">
               Consultores en proyectos, desarrollo económico y emprendimiento.
             </p>
-            <div className="flex gap-2 text-white">
-              <Linkedin />
-              <XIcon />
-              <InstagramIcon />
-              <FacebookIcon />
+            <div className="flex gap-4 text-white">
+              <Link
+                href="https://www.instagram.com/kodempro/"
+                target="_blank"
+                className="cursor-pointer"
+              >
+                <InstagramIcon />
+              </Link>
+              <Link
+                href="https://www.facebook.com/kodempro/"
+                target="_blank"
+                className="cursor-pointer"
+              >
+                <FacebookIcon />
+              </Link>
+              <Link
+                href="https://x.com/kodempro"
+                target="_blank"
+                className="cursor-pointer"
+              >
+                <XIcon />
+              </Link>
             </div>
           </div>
           <div className="flex flex-col gap-4">

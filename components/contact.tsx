@@ -21,7 +21,7 @@ const CONTACT_INFO = [
   {
     icon: <MailIcon />,
     title: "Email",
-    description: "info@kodempro.com",
+    description: "kodempro@gmail.com",
   },
 ];
 
