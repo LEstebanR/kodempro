@@ -23,7 +23,7 @@ const CONTACT_INFO = [
   {
     icon: <PhoneIcon />,
     title: "Teléfono",
-    description: "+57 317 823 4567",
+    description: "301 270 7999",
   },
   {
     icon: <MailIcon />,
@@ -48,7 +48,7 @@ export function Contact() {
                 <div className="bg-primary text-white font-bold rounded-full p-1 flex items-center justify-center h-10  w-10">
                   {info.icon}
                 </div>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-1">
                   <p className="text-lg font-bold">{info.title}</p>
                   <p className="text-sm text-gray-500">{info.description}</p>
                 </div>
