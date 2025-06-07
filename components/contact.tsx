@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { MailIcon, PhoneIcon } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
@@ -12,6 +15,8 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "./ui/button";
 import { SERVICES } from "@/lib/data";
+import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
 
 const CONTACT_INFO = [
   {
@@ -27,8 +32,47 @@ const CONTACT_INFO = [
 ];
 
 export function Contact() {
+  const [message, setMessage] = useState<string>("");
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [service, setService] = useState<string>("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  async function submitEmail(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      const templateParams = {
+        name: name,
+        email: email,
+        service: service,
+        message: message,
+      };
+
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+
+      toast.success("Mensaje enviado correctamente");
+      // Limpiar el formulario
+      setName("");
+      setEmail("");
+      setService("");
+      setMessage("");
+    } catch (error) {
+      console.error("Error al enviar el correo:", error);
+      toast.error("Error al enviar el mensaje");
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
   return (
-    <div className="flex flex-col items-center justify-center  w-screen bmt-14">
+    <div className="flex flex-col items-center justify-center w-screen bmt-14">
       <div className="py-14 grid grid-cols-1 md:grid-cols-2 gap-12 md:w-6/12 px-4 md:px-0">
         <div className="flex flex-col gap-4">
           <h2 className="text-4xl">Contacto</h2>
@@ -39,7 +83,7 @@ export function Contact() {
           <div className="flex flex-col gap-2">
             {CONTACT_INFO.map((info) => (
               <div className="flex gap-2 items-center" key={info.title}>
-                <div className="bg-primary text-white font-bold rounded-full p-1 flex items-center justify-center h-10  w-10">
+                <div className="bg-primary text-white font-bold rounded-full p-1 flex items-center justify-center h-10 w-10">
                   {info.icon}
                 </div>
                 <div className="flex flex-col gap-1">
@@ -50,34 +94,58 @@ export function Contact() {
             ))}
           </div>
         </div>
-        <Card className="p-8 shadow-lg flex flex-col gap-4 border border-primary">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-            <div className="flex flex-col gap-2">
-              <Label>Nombre</Label>
-              <Input type="text" placeholder="Tu nombre" />
+        <Card>
+          <form className="p-8 flex flex-col gap-4" onSubmit={submitEmail}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+              <div className="flex flex-col gap-2">
+                <Label>Nombre</Label>
+                <Input
+                  type="text"
+                  placeholder="Tu nombre"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <Label>Email</Label>
+                <Input
+                  type="email"
+                  placeholder="Tu email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </div>
             </div>
-            <div className="flex flex-col gap-2">
-              <Label>Email</Label>
-              <Input type="email" placeholder="Tu email" />
-            </div>
-          </div>
-
-          <Label>Servicio</Label>
-          <Select>
-            <SelectTrigger className="w-full">
-              <SelectValue placeholder="Selecciona un servicio" />
-            </SelectTrigger>
-            <SelectContent>
-              {SERVICES.map((service) => (
-                <SelectItem value={service.id} key={service.id}>
-                  {service.title}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-          <Label>Mensaje</Label>
-          <Textarea placeholder="Tu mensaje" />
-          <Button>Enviar</Button>
+            <Label>Servicio</Label>
+            <Select
+              value={service}
+              onValueChange={(value) => setService(value)}
+              required
+            >
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="Selecciona un servicio" />
+              </SelectTrigger>
+              <SelectContent>
+                {SERVICES.map((service) => (
+                  <SelectItem value={service.title} key={service.id}>
+                    {service.title}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <Label>Mensaje</Label>
+            <Textarea
+              placeholder="Tu mensaje"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+            />
+            <Button className="w-full" type="submit" disabled={isLoading}>
+              {isLoading ? "Enviando..." : "Enviar"}
+            </Button>
+          </form>
         </Card>
       </div>
     </div>
