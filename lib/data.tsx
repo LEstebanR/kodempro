@@ -67,18 +67,16 @@ export const CLIENTS_OPTIONS = [
     description:
       "Kodempro transformó nuestra idea en una aplicación web funcional en tiempo récord. Su equipo es profesional y altamente capacitado.",
     position: "Alcaldía",
-    avatar:
-      "https://res.cloudinary.com/lesteban/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1748714965/kodempro/alcaldia-sb_dv4dbp.jpg",
+    avatar: "/logos/alcaldia-sb.jpg",
   },
   {
-    name: "Personería",
+    name: "Alcaldía",
     company: "Salgar",
     fallback: "S",
     description:
       "Kodempro transformó nuestra idea en una aplicación web funcional en tiempo récord. Su equipo es profesional y altamente capacitado.",
     position: "Alcaldía",
-    avatar:
-      "https://res.cloudinary.com/lesteban/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1748715747/kodempro/salgar_rvtoxl.png",
+    avatar: "/logos/salgar.jpg",
   },
   {
     name: "Personería",
@@ -87,37 +85,33 @@ export const CLIENTS_OPTIONS = [
     description:
       "Kodempro transformó nuestra idea en una aplicación web funcional en tiempo récord. Su equipo es profesional y altamente capacitado.",
     position: "Alcaldía",
-    avatar:
-      "https://res.cloudinary.com/lesteban/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1748715731/kodempro/entrerrios_tuf0xd.png",
+    avatar: "/logos/entrerrios.jpg",
   },
   {
-    name: "Personería",
+    name: "Alcaldía",
     company: "La Pintada",
     fallback: "LP",
     description:
       "Kodempro transformó nuestra idea en una aplicación web funcional en tiempo récord. Su equipo es profesional y altamente capacitado.",
     position: "Alcaldía",
-    avatar:
-      "https://res.cloudinary.com/lesteban/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1748715696/kodempro/la_pintada_btw0sr.jpg",
+    avatar: "/logos/la_pintada.jpg",
   },
   {
-    name: "Jhon Doe",
+    name: "Carlos Montoya",
     company: "Universidad de Medellín",
     fallback: "UM",
     description:
       "Kodempro transformó nuestra idea en una aplicación web funcional en tiempo récord. Su equipo es profesional y altamente capacitado.",
     position: "Profesor",
-    avatar:
-      "https://res.cloudinary.com/lesteban/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1748715695/kodempro/udem_qxjm28.svg",
+    avatar: "/logos/udem.jpg",
   },
   {
-    name: "Jhon Adams",
+    name: "Juan Martinez",
     company: "Compuhora",
     fallback: "JA",
     description:
       "Kodempro transformó nuestra idea en una aplicación web funcional en tiempo récord. Su equipo es profesional y altamente capacitado.",
     position: "CEO",
-    avatar:
-      "https://res.cloudinary.com/lesteban/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1748715695/kodempro/compuhora_fzdhax.jpg",
+    avatar: "/logos/compuhora.jpg",
   },
 ];
