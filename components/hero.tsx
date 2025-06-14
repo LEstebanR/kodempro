@@ -64,7 +64,7 @@ export function Hero() {
         </div>
 
         <Image
-          src="https://res.cloudinary.com/lesteban/image/upload/v1748697476/kodempro/reunion.png"
+          src="/general/hero.jpg"
           alt="consultores"
           width={400}
           height={400}

@@ -6,7 +6,7 @@ export function About() {
       <div className="flex flex-col gap-8  md:rounded-lg bg-white w-screen md:w-6/12 p-4 shadow-lg md:border border-primary">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
           <Image
-            src="https://res.cloudinary.com/lesteban/image/upload/v1748697733/kodempro/trato.png"
+            src="/general/about.jpg"
             alt="consultores"
             width={400}
             height={400}

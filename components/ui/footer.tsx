@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="flex flex-col gap-4">
             <Image
-              src="https://res.cloudinary.com/lesteban/image/upload/c_crop,ar_16:9/v1748696685/kodempro/logoblanco.png"
+              src="/logos/logoblanco.png"
               alt="Logo"
               width={150}
               height={150}
@@ -84,7 +84,7 @@ export function Footer() {
             <span className="text-slate-300">por</span>
             <Link
               href="https://github.com/LEstebanR/lesteban"
-              className="text-slate-300 hover:text-primary transition-all duration-300 hover:underline underline-offset-4"
+              className="text-slate-300 hover:text-red-500 transition-all duration-300 hover:underline underline-offset-4"
             >
               LEstebanR
             </Link>

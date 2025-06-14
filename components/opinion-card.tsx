@@ -15,7 +15,7 @@ export function OpinionCard({ opinion }: { opinion: Opinion }) {
   return (
     <Card className="shadow-lg border border-primary h-full">
       <CardHeader className="flex gap-4 items-center">
-        <Avatar className="w-14 h-14">
+        <Avatar className="w-18 h-18 p-2">
           <AvatarImage src={opinion.avatar} alt={opinion.name} />
           <AvatarFallback>{opinion.fallback}</AvatarFallback>
         </Avatar>
